@@ -1,0 +1,35 @@
+# Aplicación de Procesamiento de Imágenes - Versión OpenMP
+
+Esta versión de la aplicación utiliza OpenMP para paralelizar el procesamiento de una imagen en color a escala de grises.
+
+**Compilación:**
+
+1. Ejecute el siguiente comando en la terminal para compilar la versión OpenMP:
+
+```bash
+make openmp
+Ejecución:
+
+Utilice el siguiente comando para ejecutar la aplicación:
+bash
+Copy code
+./openmp <imagen_entrada> <imagen_salida> <num_hilos>
+Parámetros:
+
+<imagen_entrada>: Nombre del archivo de la imagen en color.
+<imagen_salida>: Nombre del archivo para la imagen en escala de grises.
+<num_hilos>: Número de hilos para el procesamiento.
+Ejemplo:
+
+bash
+Copy code
+./openmp Prueba23.png mi_imagen_gris_openmp.png 4
+Medición de Tiempo:
+
+El programa mostrará el tiempo total de ejecución.
+
+Organización del Código:
+
+Asegúrese de que el código esté debidamente comentado.
+Los nombres de variables y métodos deben ser descriptivos.
+El código debe estar tabulado adecuadamente para facilitar la lectura.
