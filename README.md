@@ -5,7 +5,7 @@ COMANDOS DE ARRANQUE:
 
 #primero verificar nombres de archivos con:
 
-nano make 
+nano main.cpp
 
 #luego guardar y compilar con:
 
