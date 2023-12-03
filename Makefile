@@ -1,11 +1,18 @@
-CXX=g++
-CXXFLAGS=-std=c++11 -Wall -Wextra -pedantic -O3
-LIBS=`pkg-config --cflags --libs opencv4`
+LIBS = 'pkg-config --cflags --libs opencv'
 
-all: main
 
-main: main.cpp image_processing.cpp
-	$(CXX) $(CXXFLAGS) -o $@ $^ $(LIBS)
+all: threaded secuencial
+
+secuencial:
+	g++ -m64 -o main_secuencial main_secuencial.cpp -I/usr/include/opencv4 -lopencv_core -lopencv_imgcodecs -lopencv_imgproc -lopencv_highgui
+	chmod +x main_secuencial
+
+threaded:
+	g++ -m64 -o main_threaded procesador_threaded.cpp main_threaded.cpp  -I/usr/include/opencv4 -lopencv_core -lopencv_imgcodecs -lopencv_imgproc -lopencv_highgui
+	chmod +x main_threaded
+
 
 clean:
-	rm -f main
+	rm main_secuencial.cpp
+
+
