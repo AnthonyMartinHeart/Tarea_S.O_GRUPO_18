@@ -1,4 +1,4 @@
-# ProcesadorThreaded README y Comentarios
+# Procesador Thread README
 
 ## Descripción general
 
