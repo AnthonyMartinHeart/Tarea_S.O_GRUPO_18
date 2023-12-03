@@ -1,4 +1,4 @@
-# Procesamiento Secuencial README y Comentarios (GNU/Linux)
+# Procesamiento Secuencial README
 
 ## Descripción general
 
